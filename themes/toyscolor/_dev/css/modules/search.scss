@@ -1,0 +1,39 @@
+#search_widget{
+    float: none;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    input[type="text"]{
+        background-color: $yellow;
+        border-radius: 30px;
+        padding: 15px 25px 15px 40px;
+        font-weight: 600;
+        color: $text-color;
+        &::placeholder{
+            font-weight: 600;
+            color: white;
+        }
+        &:focus{
+            border: 1px solid $green;
+        }
+    }
+    i{
+        padding: 15px;
+        color: white;
+        line-height: 35px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .header-top .col-md-5 #search_widget{
+        display: none!important;
+        width: 100%!important;
+    }
+}
+@media(min-width: 768px){
+    #_desktop_top_menu #search_widget{
+        display: none!important;
+    }
+}

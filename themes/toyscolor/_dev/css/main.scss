@@ -1,0 +1,64 @@
+
+// cd .\themes\toyscolor\_dev
+// npm run sass
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+@import "./utils/variables.scss";
+@import "./utils/components.scss";
+@import "./utils/header.scss";
+@import "./utils/footer.scss";
+@import "./utils/cms.scss";
+@import "./utils/category.scss";
+@import "./utils/products.scss";
+@import "./modules/custom-text.scss";
+@import "./modules/slider.scss";
+@import "./modules/reassurance.scss";
+@import "./modules/main-product.scss";
+@import "./modules/shop-presentation.scss";
+@import "./modules/search.scss";
+
+
+*, body, h1, h2, h3, h4, .h1, .h2, .h3, .h4, p, a, span{
+    color: $text-color;
+    font-family: $quicksand;
+    text-transform: none;
+}
+h1, .h1, h2, .h2{
+    font-size: 30px;
+    color: $green;
+    @media(min-width: 400px){
+        font-size: 30px;
+    }
+    @media(min-width: 768px){
+        font-size: 35px;
+    }
+}
+
+p, a, span{
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 16px;
+    @media(min-width: 400px){
+        font-size: 18px;
+    }
+}
+
+a:hover{
+    color: $green;
+}
+
+#wrapper{
+    background-color: white;
+}
+
+#index #wrapper{
+    padding-top: 0;
+}
+
+#main .page-footer{
+    margin-bottom: 0;
+}
+

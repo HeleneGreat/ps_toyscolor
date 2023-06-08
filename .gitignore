@@ -1,0 +1,97 @@
+# Ignorer les fichiers générés par PrestaShop
+/_cache/
+/_config/
+/_log/
+/_migrate/
+/_tmp/
+/webservice
+/var
+/tools
+/admin_mdp
+/log
+/mails
+/pdf
+/templates
+/themes/classic
+/themes/_libraries
+/translations
+/src
+
+# Ignorer les fichiers et dossiers spécifiques
+/translations/*/pdf/
+
+# Ignorer les fichiers de configuration
+/config/*.php
+/config/*.dist
+!config/settings.inc.php
+
+# Ignorer les fichiers de sauvegarde
+*.bak
+*.swp
+*.~*
+
+# Ignorer les fichiers de débogage
+/debug/
+
+# Ignorer les fichiers d'installation
+/install-dev/
+/install/
+
+# Ignorer les fichiers de documentation
+/doc/
+
+# Ignorer les fichiers de dépendances
+/vendor/
+/classes
+/controllers
+/docs
+/download
+/img
+/js
+/localization
+/cache
+/bin
+
+
+
+# Ignorer les fichiers générés par des outils de développement
+/.vscode/
+/.idea/
+
+# Ignorer les fichiers de journalisation des erreurs
+/error_log
+
+# Ignorer les fichiers de cache générés par l'extension Symfony Cache
+/var/cache/
+/var/log/
+
+# Ignorer les fichiers de cache Twig
+/var/cache/prod/
+/var/cache/dev/
+/var/cache/test/
+
+# Ignorer les fichiers de cache Smarty
+/tools/smarty/compile/
+/tools/smarty/cache/
+
+# Ignorer les fichiers d'export de la base de données
+/admin-dev/export/
+
+# Ignorer les fichiers de session
+/var/session/
+
+# Ignorer les fichiers de comptes clients générés par PrestaShop
+/upload/
+
+# Ignorer les fichiers à la racine du projet
+/.htaccess
+/.php-cs-fixer.dist.php
+/autoload.php
+/composer.lock
+/index.php
+/init.php
+/INSTALL.txt
+/LICENSES
+/Makefile
+/phpstan.neon.dist
+/robots.txt

@@ -1,0 +1,43 @@
+.blockreassurance{
+    &::before{
+        content: '';
+        display: block;
+        border-top: 1px solid $yellow;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 50px;
+    }
+    .block-icon{
+        height: 90px;
+        svg{
+            overflow: visible;
+        }
+        svg path,
+        svg circle,
+        svg rect {
+            fill: $green;
+            @include transition();
+            transform-origin: center;
+        }
+    }
+    .col-xs-12:hover{
+        svg path,
+        svg circle,
+        svg rect {
+            transform: scale(1.3);
+            transform-origin: center;
+            // fill: $blue;
+        }
+    }
+
+
+    .block-title{
+        color: $yellow!important;
+        font-size: 20px;
+    }
+    p{
+        color: $green!important;
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,73 @@
+.page-my-account #content{
+    .links a i{
+        color: $yellow;
+    }
+    .links a:hover i{
+        color: $green;
+    }
+}
+
+
+#cms{
+    #content{
+        padding: 0;
+    }
+    h1, h2, h3, h4{
+        color: $green;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 22px!important;
+    }
+    p, span{
+        font-size: 17px!important;
+    }
+    a{
+        color: $green;
+        font-weight: 600;
+        &:hover{
+            color: $blue;
+        }
+    }
+    .page-cms{
+        img{
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+    }
+    // Liste des actualités
+    &.cms-id-2{
+        .page-content li{
+            p, h1, h2{
+                display: none!important;
+            }
+            a{
+                display: block;
+                text-align: center;
+                &:hover img{
+                    transform: scale(0.95);
+                }
+            }
+            p.has-image{
+                display: block!important;
+            }
+            img{
+                display: block!important;
+                max-width: 100%!important;
+                height: auto;
+                border-radius: 20px;
+                @include transition(0.4s);
+            }
+        }
+    }
+}
+
+.page-content.page-cms {
+    text-align: left;
+}

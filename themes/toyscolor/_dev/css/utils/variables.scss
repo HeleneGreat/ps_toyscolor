@@ -1,0 +1,33 @@
+:root{
+    --green: #3AAA35;
+    --yellow: #f9b233;
+    --blue: #009FE3;
+    --purple: #951BB1;
+    --red: #E30613;
+    --orange: #E94E1B;
+    --text-color: #4F4F4F;
+}
+
+// Base colors
+$green: var(--green);
+$yellow: var(--yellow);
+$blue: var(--blue);
+$purple: var(--purple);
+$red: var(--red);
+$orange: var(--orange);
+
+// Pastel colors
+$green_pastel: rgb(182,224,180);
+$yellow_pastel: rgb(251,205,122);
+$blue_pastel: rgb(156,218,244);
+$purple_pastel: rgb(214,166,225);
+$red_pastel: rgb(244,158,163);
+$orange_pastel: rgb(246,186,166);
+
+// Text colors
+$text-color: #4F4F4F;
+
+
+// Fonts
+$quicksand: "Quicksand", Arial;
+
