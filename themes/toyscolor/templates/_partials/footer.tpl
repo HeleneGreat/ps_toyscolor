@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="container">
-  <div class="row">
+  <div class="">
     {block name='hook_footer_before'}
       {hook h='displayFooterBefore'}
     {/block}
