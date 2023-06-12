@@ -23,9 +23,5 @@ define('_PS_MODE_DEV_', true);
 - création du module hc_mainproduct
 
 
-## Modifications depuis le 1er import sur CPanel
-
-
-
 # TODO
-- vérifier tous les liens des boutons / images / modules 
+- footer mobile 2x informations

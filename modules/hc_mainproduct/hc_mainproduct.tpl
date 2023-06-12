@@ -40,7 +40,7 @@
         <p class="text3">{$text nofilter}</p>
       {/foreach}
       
-      <a href="{$urls.base_url}" class="btn">
+      <a href="{$urls.base_url}toyscolor/36-toyscolor-kit-de-peinture.html" class="btn">
       Voir le produit
       </a>
       

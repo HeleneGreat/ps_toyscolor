@@ -44,3 +44,28 @@
         margin-top: 20px;
     }
 }
+
+.form-control{
+    background-color: white!important;
+    border-color: $yellow;
+    &:focus{
+        border: 2px;
+    }
+}
+.contact-form{
+    h1{
+        text-align: center;
+    }
+    .group-span-filestyle .btn-default{
+        background-color: $yellow;
+        span{
+            color: white;
+        }
+    }
+    .star{
+        color: $orange;
+    }
+    .form-footer{
+        text-align: center;
+    }
+}

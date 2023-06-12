@@ -97,6 +97,9 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 18px;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
         .popover{
@@ -173,6 +176,31 @@
         }
         #cms-category-2 .popover, #cms-category-2 i{
             display: none!important;
+        }        
+        .current a, a:hover{
+            color: $yellow;
+        }
+        #category-2{
+            .popover{
+                display: block!important;
+                opacity: 1!important;
+                visibility: visible!important;
+                img{
+                    display: none;
+                }
+                span{
+                    color: $green;
+                }
+                .current span, span:hover{
+                    color: $yellow;
+                }
+                p{
+                    margin: 0;
+                }
+                #search_widget{
+                    display: none;
+                }
+            }
         }
         #top-menu{
             margin-top: 40px;

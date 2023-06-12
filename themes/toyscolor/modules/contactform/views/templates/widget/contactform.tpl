@@ -38,14 +38,14 @@
       <section class="form-fields">
 
         <div class="form-group row">
-          <div class="col-md-9 col-md-offset-3">
-            <h3>{l s='Contact us' d='Shop.Theme.Global'}</h3>
+          <div class="col-md-offset-3 text-center">
+            <h1>{l s='Contact us' d='Shop.Theme.Global'}</h1>
           </div>
         </div>
 
         <div class="form-group row">
           <label class="col-md-3 form-control-label" for="id_contact">{l s='Subject' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <div class="col-md-9">
             <select name="id_contact" id="id_contact" class="form-control form-control-select">
               {foreach from=$contact.contacts item=contact_elt}
                 <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
@@ -55,8 +55,8 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label" for="email">{l s='Email address' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <label class="col-md-3 form-control-label" for="email">{l s='Email address' d='Shop.Forms.Labels'} <span class="star">*</span></label>
+          <div class="col-md-9">
             <input
               id="email"
               class="form-control"
@@ -71,7 +71,7 @@
         {if $contact.orders}
           <div class="form-group row">
             <label class="col-md-3 form-control-label" for="id-order">{l s='Order reference' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
+            <div class="col-md-9">
               <select id="id-order" name="id_order" class="form-control form-control-select">
                 <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
                 {foreach from=$contact.orders item=order}
@@ -79,26 +79,26 @@
                 {/foreach}
               </select>
             </div>
-            <span class="col-md-3 form-control-comment">
+            {* <span class="col-md-3 form-control-comment">
               {l s='optional' d='Shop.Forms.Help'}
-            </span>
+            </span> *}
           </div>
         {/if}
 
         {if $contact.allow_file_upload}
           <div class="form-group row">
             <label class="col-md-3 form-control-label" for="file-upload">{l s='Attachment' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
+            <div class="col-md-9">
               <input id="file-upload" type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
             </div>
-            <span class="col-md-3 form-control-comment">
+            {* <span class="col-md-3 form-control-comment">
               {l s='optional' d='Shop.Forms.Help'}
-            </span>
+            </span> *}
           </div>
         {/if}
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label" for="contactform-message">{l s='Message' d='Shop.Forms.Labels'}</label>
+          <label class="col-md-3 form-control-label" for="contactform-message">{l s='Message' d='Shop.Forms.Labels'} <span class="star">*</span></label>
           <div class="col-md-9">
             <textarea
               id="contactform-message"
@@ -120,7 +120,7 @@
 
       </section>
 
-      <footer class="form-footer text-sm-right">
+      <footer class="form-footer">
         <style>
           input[name=url] {
             display: none !important;

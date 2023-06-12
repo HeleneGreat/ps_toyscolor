@@ -24,6 +24,8 @@
 /config/*.php
 /config/*.dist
 !config/settings.inc.php
+!config/defines.inc.php
+!config/defines_cpanel.inc.php
 
 # Ignorer les fichiers de sauvegarde
 *.bak

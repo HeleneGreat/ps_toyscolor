@@ -7,7 +7,9 @@
             {assign var=_counter value=$_counter+1}
               <a
                 class="{if $depth >= 0}dropdown-item{/if}{if $depth === 1} dropdown-submenu{/if}"
-                href="{$node.url}" data-depth="{$depth}"
+                  {* No link for the main category *}
+                {if $node.page_identifier != "category-2"} href="{$node.url}"{/if}
+                 data-depth="{$depth}"
                 {if $node.open_in_new_window} target="_blank" {/if}
               >
                 {if $node.children|count}

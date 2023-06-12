@@ -1,8 +1,8 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => '11.110.0.7',
-    'database_port' => '',
+    'database_host' => 'localhost',
+    'database_port' => '21',
     'database_name' => 'mdp3_toyscolor',
     'database_user' => 'mdp3_mdp3',
     'database_password' => 'MDPteam3*',
