@@ -21,7 +21,3 @@ define('_PS_MODE_DEV_', true);
 - création du module hc_shoppresentation
 - ajout du module best-sellers
 - création du module hc_mainproduct
-
-
-# TODO
-- footer mobile 2x informations
